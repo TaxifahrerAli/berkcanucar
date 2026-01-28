@@ -7,10 +7,10 @@
     --bg-card: #27272a;
     --text-primary: #fafafa;
     --text-secondary: #a1a1aa;
-    --accent-primary: #a1a1aa;
-    --accent-secondary: #d4d4d8;
-    --accent-glow: rgba(161, 161, 170, 0.2);
-    --gradient-primary: linear-gradient(135deg, #52525b 0%, #71717a 100%);
+    --accent-primary: #3b82f6;
+    --accent-secondary: #60a5fa;
+    --accent-glow: rgba(59, 130, 246, 0.25);
+    --gradient-primary: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
     --gradient-bg: linear-gradient(180deg, #18181b 0%, #09090b 100%);
     --border-color: rgba(255, 255, 255, 0.08);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -257,15 +257,15 @@ button {
 
 .nav-btn {
     padding: 0.5rem 1.2rem !important;
-    background: var(--text-primary);
+    background: var(--accent-primary);
     border-radius: 6px;
-    color: var(--bg-dark) !important;
+    color: white !important;
     font-weight: 500;
     transition: all var(--transition-fast);
 }
 
 .nav-btn:hover {
-    opacity: 0.9;
+    background: var(--accent-secondary);
 }
 
 .nav-btn::after {
@@ -344,14 +344,15 @@ button {
 }
 
 .btn-primary {
-    background: var(--text-primary);
-    color: var(--bg-dark);
-    font-weight: 600;
+    background: var(--accent-primary);
+    color: white;
+    font-weight: 500;
 }
 
 .btn-primary:hover {
+    background: var(--accent-secondary);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
 }
 
 .btn-secondary {
@@ -454,7 +455,8 @@ button {
 }
 
 .timeline-item:hover .timeline-dot {
-    background: var(--text-secondary);
+    background: var(--accent-primary);
+    box-shadow: 0 0 12px var(--accent-glow);
 }
 
 .timeline-date {
@@ -583,8 +585,8 @@ button {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background: var(--text-secondary);
+    width: 3px;
+    background: var(--accent-primary);
 }
 
 .experience-card:hover {
