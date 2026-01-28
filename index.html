@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berk Can Ucar | Informatik-Student</title>
     <meta name="description" content="Persönliche Website von Berk Can Ucar - Informatik-Student an der RWTH Aachen">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='68' font-family='Arial' font-size='50' font-weight='bold' fill='white' text-anchor='middle'>BC</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2327272a'/><text x='50' y='68' font-family='Arial' font-size='50' font-weight='bold' fill='%23fafafa' text-anchor='middle'>BC</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,11 +21,7 @@
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
         </div>
-        <div class="particles" id="particles"></div>
     </div>
-
-    <!-- Cursor Glow Effect -->
-    <div class="cursor-glow" id="cursorGlow"></div>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -48,7 +44,7 @@
                         <span class="lang-text">EN</span>
                     </button>
                 </li>
-                <li><a href="lebenslauf.pdf" download class="nav-btn" data-de="Lebenslauf ↓" data-en="Resume ↓">Lebenslauf ↓</a></li>
+                <li><a href="CV.pdf" download class="nav-btn" data-de="Lebenslauf ↓" data-en="CV ↓">Lebenslauf ↓</a></li>
             </ul>
         </div>
     </nav>
@@ -59,82 +55,52 @@
             <div class="hero-text">
                 <p class="hero-greeting fade-in" data-de="Hallo, ich bin" data-en="Hello, I'm">Hallo, ich bin</p>
                 <h1 class="hero-name fade-in delay-1">
-                    <span class="name-line">Berk Can</span>
-                    <span class="name-line accent">Ucar</span>
+                    <span class="name-line split-text">Berk Can</span>
+                    <span class="name-line accent split-text">Ucar</span>
                 </h1>
                 <p class="hero-subtitle fade-in delay-2" data-de="Informatik-Student an der RWTH Aachen" data-en="Computer Science Student at RWTH Aachen">Informatik-Student an der RWTH Aachen</p>
                 <div class="hero-cta fade-in delay-3">
-                    <a href="#projects" class="btn btn-primary magnetic" data-de="Projekte ansehen" data-en="View Projects">
+                    <a href="#projects" class="btn btn-primary" data-de="Projekte ansehen" data-en="View Projects">
                         <span>Projekte ansehen</span>
                     </a>
-                    <a href="lebenslauf.pdf" download class="btn btn-secondary magnetic" data-de="Lebenslauf ↓" data-en="Resume ↓">
+                    <a href="CV.pdf" download class="btn btn-secondary" data-de="Lebenslauf ↓" data-en="CV ↓">
                         <span>Lebenslauf ↓</span>
                     </a>
                 </div>
-                <div class="hero-social fade-in delay-4">
-                    <a href="https://linkedin.com/in/berk-can-ucar-a4aba6375" target="_blank" rel="noopener" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
             </div>
-            <div class="hero-visual fade-in delay-2">
-                <div class="tech-orbit">
-                    <div class="orbit-center">
-                        <span class="center-icon">👨‍💻</span>
-                    </div>
-                    <div class="orbit orbit-1">
-                        <div class="orbit-item" style="--delay: 0s"><span>Python</span></div>
-                        <div class="orbit-item" style="--delay: 2s"><span>Java</span></div>
-                        <div class="orbit-item" style="--delay: 4s"><span>JS</span></div>
-                    </div>
-                    <div class="orbit orbit-2">
-                        <div class="orbit-item" style="--delay: 1s"><span>🎓</span></div>
-                        <div class="orbit-item" style="--delay: 3s"><span>🚀</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator fade-in delay-4">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span data-de="Scroll" data-en="Scroll">Scroll</span>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title reveal-slide">
+            <h2 class="section-title scroll-reveal">
                 <span class="title-number">01.</span>
                 <span data-de="Über mich" data-en="About Me">Über mich</span>
                 <div class="title-line"></div>
             </h2>
             
             <div class="about-grid">
-                <div class="about-text reveal-fade">
+                <div class="about-text scroll-reveal" data-delay="100">
                     <p data-de="Informatik-Student an der RWTH Aachen mit Leidenschaft für Softwareentwicklung und innovative Lösungen." data-en="Computer Science student at RWTH Aachen with a passion for software development and innovative solutions.">
                         Informatik-Student an der RWTH Aachen mit Leidenschaft für Softwareentwicklung und innovative Lösungen.
                     </p>
                 </div>
                 
-                <div class="timeline reveal-stagger">
-                    <div class="timeline-item stagger-item">
+                <div class="timeline">
+                    <div class="timeline-item scroll-reveal" data-delay="200">
                         <div class="timeline-dot"></div>
                         <span class="timeline-date">2025 –</span>
                         <div class="timeline-content">
-                            <h3>Informatik B.Sc.</h3>
+                            <h3 data-de="Informatik B.Sc." data-en="Computer Science B.Sc.">Informatik B.Sc.</h3>
                             <p>RWTH Aachen</p>
                         </div>
                     </div>
-                    <div class="timeline-item stagger-item">
+                    <div class="timeline-item scroll-reveal" data-delay="300">
                         <div class="timeline-dot"></div>
                         <span class="timeline-date">2025</span>
                         <div class="timeline-content">
-                            <h3>Abitur <span class="highlight">1.0</span></h3>
+                            <h3><span data-de="Abitur" data-en="A-Levels">Abitur</span> <span class="highlight">1.0</span></h3>
                             <p>Ricarda-Huch-Gymnasium Krefeld · 884 <span data-de="Punkte" data-en="Points">Punkte</span></p>
                         </div>
                     </div>
@@ -146,14 +112,14 @@
     <!-- Projects Section -->
     <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title reveal-slide">
+            <h2 class="section-title scroll-reveal">
                 <span class="title-number">02.</span>
                 <span data-de="Projekte" data-en="Projects">Projekte</span>
                 <div class="title-line"></div>
             </h2>
             
             <div class="projects-grid">
-                <div class="project-card reveal-scale">
+                <div class="project-card scroll-reveal" data-delay="100">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <span class="project-icon">🤖</span>
@@ -161,7 +127,7 @@
                             <span class="project-badge" data-de="KI" data-en="AI">KI</span>
                         </div>
                     </div>
-                    <h3>Mandarin-Lernbot</h3>
+                    <h3 data-de="Mandarin-Lernbot" data-en="Mandarin Learning Bot">Mandarin-Lernbot</h3>
                     <p data-de="Ein Chatbot, der Vokabellisten als Eingabe nutzt und Antworten dynamisch an den Wortschatz anpasst." data-en="A chatbot that uses vocabulary lists as input and dynamically adapts responses to the user's vocabulary.">
                         Ein Chatbot, der Vokabellisten als Eingabe nutzt und Antworten dynamisch an den Wortschatz anpasst.
                     </p>
@@ -172,7 +138,7 @@
                     </div>
                 </div>
                 
-                <div class="project-card reveal-scale" style="--delay: 0.1s">
+                <div class="project-card scroll-reveal" data-delay="200">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <span class="project-icon">📅</span>
@@ -180,7 +146,7 @@
                             <span class="project-badge">Web</span>
                         </div>
                     </div>
-                    <h3>Müllabfuhr-Planer</h3>
+                    <h3 data-de="Müllabfuhr-Planer" data-en="Waste Collection Scheduler">Müllabfuhr-Planer</h3>
                     <p data-de="Webapplikation zur automatischen Erstellung von Müllabfuhrplänen für Mehrfamilienhäuser." data-en="Web application for automatic creation of waste collection schedules for apartment buildings.">
                         Webapplikation zur automatischen Erstellung von Müllabfuhrplänen für Mehrfamilienhäuser.
                     </p>
@@ -191,7 +157,7 @@
                     </div>
                 </div>
                 
-                <div class="project-card reveal-scale" style="--delay: 0.2s">
+                <div class="project-card scroll-reveal" data-delay="300">
                     <div class="project-glow"></div>
                     <div class="project-header">
                         <span class="project-icon">🏆</span>
@@ -199,7 +165,7 @@
                             <span class="project-badge award" data-de="Ausgezeichnet" data-en="Award">Ausgezeichnet</span>
                         </div>
                     </div>
-                    <h3>Kita-Portal Krefeld</h3>
+                    <h3 data-de="Kita-Portal Krefeld" data-en="Daycare Portal Krefeld">Kita-Portal Krefeld</h3>
                     <p data-de="Wettbewerb „KReate Future": Konzept für ein Portal zur effizienten Platzvergabe in Kitas." data-en="'KReate Future' competition: Concept for a portal for efficient daycare placement allocation.">
                         Wettbewerb „KReate Future": Konzept für ein Portal zur effizienten Platzvergabe in Kitas.
                     </p>
@@ -216,13 +182,13 @@
     <!-- Experience Section -->
     <section id="experience" class="section experience">
         <div class="container">
-            <h2 class="section-title reveal-slide">
+            <h2 class="section-title scroll-reveal">
                 <span class="title-number">03.</span>
                 <span data-de="Erfahrung" data-en="Experience">Erfahrung</span>
                 <div class="title-line"></div>
             </h2>
             
-            <div class="experience-card reveal-slide-right">
+            <div class="experience-card scroll-reveal" data-delay="100">
                 <div class="experience-indicator"></div>
                 <div class="experience-date">2022 – <span data-de="Jetzt" data-en="Now">Jetzt</span></div>
                 <div class="experience-content">
@@ -240,26 +206,26 @@
                 </div>
             </div>
             
-            <div class="skills-section reveal-fade">
+            <div class="skills-section scroll-reveal" data-delay="200">
                 <h3 data-de="Technologien" data-en="Technologies">Technologien</h3>
                 <div class="skills-grid">
-                    <div class="skill-item hover-lift">
+                    <div class="skill-item">
                         <div class="skill-icon">🐍</div>
                         <span>Python</span>
                     </div>
-                    <div class="skill-item hover-lift">
+                    <div class="skill-item">
                         <div class="skill-icon">☕</div>
                         <span>Java</span>
                     </div>
-                    <div class="skill-item hover-lift">
+                    <div class="skill-item">
                         <div class="skill-icon">⚡</div>
                         <span>JavaScript</span>
                     </div>
-                    <div class="skill-item hover-lift">
+                    <div class="skill-item">
                         <div class="skill-icon">🌐</div>
                         <span>HTML/CSS</span>
                     </div>
-                    <div class="skill-item hover-lift">
+                    <div class="skill-item">
                         <div class="skill-icon">📦</div>
                         <span>Git</span>
                     </div>
@@ -268,17 +234,17 @@
         </div>
     </section>
 
-    <!-- Activities Section (moved to bottom) -->
+    <!-- Activities Section -->
     <section id="activities" class="section activities-section">
         <div class="container">
-            <h2 class="section-title reveal-slide">
+            <h2 class="section-title scroll-reveal">
                 <span class="title-number">04.</span>
                 <span data-de="Sonstige Aktivitäten" data-en="Other Activities">Sonstige Aktivitäten</span>
                 <div class="title-line"></div>
             </h2>
             
             <div class="activities-grid">
-                <div class="activity-card reveal-scale">
+                <div class="activity-card scroll-reveal" data-delay="100">
                     <div class="activity-icon-wrapper">
                         <span class="activity-icon">⚽</span>
                     </div>
@@ -287,7 +253,7 @@
                         <p data-de="KTSV Preußen Krefeld · Seit 2023" data-en="KTSV Preußen Krefeld · Since 2023">KTSV Preußen Krefeld · Seit 2023</p>
                     </div>
                 </div>
-                <div class="activity-card reveal-scale" style="--delay: 0.1s">
+                <div class="activity-card scroll-reveal" data-delay="200">
                     <div class="activity-icon-wrapper">
                         <span class="activity-icon">🎹</span>
                     </div>
@@ -307,7 +273,7 @@
                 <p>© 2026 Berk Can Ucar</p>
                 <div class="footer-links">
                     <a href="https://linkedin.com/in/berk-can-ucar-a4aba6375" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="lebenslauf.pdf" download data-de="Lebenslauf" data-en="Resume">Lebenslauf</a>
+                    <a href="CV.pdf" download data-de="Lebenslauf" data-en="CV">Lebenslauf</a>
                     <a href="#impressum" data-de="Impressum" data-en="Imprint">Impressum</a>
                 </div>
             </div>
@@ -323,12 +289,12 @@
                 <h3 data-de="Angaben gemäß § 5 TMG" data-en="Information according to § 5 TMG">Angaben gemäß § 5 TMG</h3>
                 <p>
                     Berk Can Ucar<br>
-                    Krefeld, Deutschland
+                    Krefeld, <span data-de="Deutschland" data-en="Germany">Deutschland</span>
                 </p>
                 
                 <h3 data-de="Kontakt" data-en="Contact">Kontakt</h3>
                 <p>
-                    E-Mail: kontakt@berkcanucar.de
+                    E-Mail: <span id="email-protection" data-user="berkcanucar8" data-domain="gmail.com">[JavaScript required]</span>
                 </p>
                 
                 <h3 data-de="Haftungsausschluss" data-en="Disclaimer">Haftungsausschluss</h3>
