@@ -1,6 +1,6 @@
 # Berk Can Ucar - Personal Website
 
-Eine moderne, schlichte persönliche Website, die mich als Informatik-Student an der RWTH Aachen vorstellt.
+Eine Website, die mich vorstellt.
 
 
 ## 📁 Projektstruktur
